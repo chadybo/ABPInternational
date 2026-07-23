@@ -7,11 +7,12 @@ header {
   text-shadow: 2px 2px blueviolet;
   margin: 0;
   padding-top: 1%;
-  padding-bottom: 1.5%;
+  padding-bottom: 1.9%;
   width: 100%;
 }
 
 h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   padding-bottom: 1%;
 }
@@ -22,7 +23,7 @@ body {
 
 #homeTitle {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -38,6 +39,7 @@ body {
 div > a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -47,4 +49,32 @@ div > a {
 
 div > a:hover {
   text-decoration: underline;
+}
+
+#perfumeTitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+#catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 25px;
+}
+
+.perfumeCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.perfumeCard img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }

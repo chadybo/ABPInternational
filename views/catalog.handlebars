@@ -1,0 +1,11 @@
+<h1>Catalog</h1>
+<div id="catalog">
+  {{#each list}}
+    <div class="perfumeCard">
+      <a id="perfumeTitle">{{name}}</a>
+      <img src="/public/{{{imgs.[0]}}}" alt="{{name}}" />
+      <div>{{brand}}</div>
+      <div>${{price}}</div>
+    </div>
+  {{/each}}
+</div>

@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { getAllPerfumes } from "../data/perfumes.js";
 const router = Router();
 
 router.route("/").get(async (req, res) => {
@@ -6,7 +7,8 @@ router.route("/").get(async (req, res) => {
 });
 
 router.route("/catalog").get(async (req, res) => {
-  res.render("catalog");
+  let perfumes = await getAllPerfumes();
+  res.render("catalog", { list: perfumes });
 });
 
 router.route("/about").get(async (req, res) => {
