@@ -1,0 +1,23 @@
+{
+  "name": "r-web-1",
+  "version": "1.0.0",
+  "description": "Package JSON for site",
+  "homepage": "https://github.com/chadybo/robotics-web#readme",
+  "bugs": {
+    "url": "https://github.com/chadybo/robotics-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadybo/robotics-web.git"
+  },
+  "license": "ISC",
+  "author": "Aditya Pradeep",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
